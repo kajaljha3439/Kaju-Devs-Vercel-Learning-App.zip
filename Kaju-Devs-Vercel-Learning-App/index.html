@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Kaju Devs — Learn. Practice. Build.</title>
+<meta name="description" content="Kaju Devs is a modern coding learning platform for notes, practice, roadmaps, progress and AI-assisted learning.">
+<style>
+:root{--bg:#050712;--panel:#0b1020;--panel2:#10172a;--text:#f7f8ff;--muted:#8994ad;--purple:#8b5cf6;--cyan:#22d3ee;--green:#34d399;--yellow:#facc15;--pink:#f472b6;--border:#ffffff12}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 8%,#8b5cf625,transparent 28%),radial-gradient(circle at 85% 20%,#22d3ee18,transparent 24%),var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,sans-serif}button,input{font:inherit}.app{display:flex;min-height:100vh}.sidebar{width:250px;position:fixed;inset:0 auto 0 0;padding:22px 15px;border-right:1px solid var(--border);background:#060914e8;backdrop-filter:blur(18px);z-index:20}.logo{font-size:21px;font-weight:950;margin:4px 9px 5px}.logo span{color:var(--purple)}.sublogo{font-size:9px;color:#66718b;letter-spacing:2px;margin:0 9px 25px}.nav{display:grid;gap:6px}.nav button{border:1px solid transparent;background:transparent;color:#aab3c7;text-align:left;padding:12px;border-radius:11px}.nav button:hover,.nav button.active{color:white;background:#8b5cf616;border-color:#8b5cf633}.side{position:absolute;left:15px;right:15px;bottom:18px;border:1px solid var(--border);border-radius:15px;padding:14px;background:linear-gradient(145deg,#8b5cf612,#22d3ee08);font-size:11px;color:var(--muted);line-height:1.5}.main{margin-left:250px;width:calc(100% - 250px);padding:28px;max-width:1500px}.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:25px}.eyebrow{font-size:10px;color:var(--cyan);font-weight:900;letter-spacing:2px}.top h1{margin:5px 0;font-size:38px}.top p{margin:0;color:var(--muted);font-size:13px}.top button{background:#111827;color:white;border:1px solid var(--border);border-radius:9px;padding:10px 13px}.page{display:none}.page.active{display:block}.grid{display:grid;gap:15px}.stats{grid-template-columns:repeat(4,1fr)}.card{background:linear-gradient(145deg,#10172ae8,#090e1ae8);border:1px solid var(--border);border-radius:17px;padding:17px;box-shadow:0 20px 60px #0003}.stat small{color:var(--muted);text-transform:uppercase;letter-spacing:1px}.stat strong{display:block;font-size:29px;margin-top:7px}.purple{color:var(--purple)}.cyan{color:var(--cyan)}.green{color:var(--green)}.yellow{color:var(--yellow)}.hero{padding:30px;min-height:260px;position:relative;overflow:hidden;background:linear-gradient(135deg,#8b5cf620,#22d3ee0d 55%,#f472b610);}.hero:after{content:"AI";position:absolute;right:35px;top:-35px;font-size:180px;font-weight:1000;color:#ffffff05}.hero h2{font-size:38px;max-width:680px;margin:5px 0 10px}.hero p{max-width:650px;color:#a5aec3;line-height:1.7}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{font-size:11px;border:1px solid var(--border);padding:7px 9px;border-radius:99px;background:#ffffff05}.hero-actions{display:flex;gap:9px;margin-top:20px}.primary{border:0!important;background:linear-gradient(135deg,#8b5cf6,#06b6d4)!important}.progress{margin-top:15px;grid-template-columns:1.3fr .7fr}.ringbox{display:grid;place-items:center;min-height:245px}.ring{width:165px;height:165px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--purple) 0%,#1b2334 0);position:relative}.ring:before{content:"";position:absolute;inset:12px;border-radius:50%;background:#0a0f1c}.ring div{position:relative;text-align:center}.ring b{font-size:38px}.ring small{display:block;color:var(--muted)}.rows{display:grid;gap:15px}.row{display:grid;gap:7px}.rowhead{display:flex;justify-content:space-between;font-size:12px}.rowhead span{color:var(--muted)}.bar{height:8px;background:#1a2232;border-radius:99px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:99px}.section{margin-top:22px}.section h2{font-size:18px}.quick{grid-template-columns:repeat(4,1fr)}.quick button{min-height:120px;text-align:left;color:white;background:#0d1423;border:1px solid var(--border);border-radius:15px;padding:16px}.quick button:hover{border-color:#8b5cf655}.quick b{display:block;margin:10px 0 5px}.quick span{font-size:11px;color:var(--muted)}.coursegrid,.contentgrid{grid-template-columns:repeat(3,1fr)}.course{min-height:180px}.course .icon{font-size:25px}.course h3{margin:12px 0 6px}.course p,.content p{color:var(--muted);font-size:12px;line-height:1.6}.badge{display:inline-block;color:#c4b5fd;background:#8b5cf615;border:1px solid #8b5cf625;padding:5px 8px;border-radius:99px;font-size:9px}.ai{display:grid;grid-template-columns:1fr 1fr;gap:15px}.ai-panel{min-height:280px}.ai-art{position:relative;overflow:hidden;background:radial-gradient(circle at 50% 45%,#8b5cf633,transparent 25%),#0a0f1c;display:grid;place-items:center}.orb{width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#8b5cf6 18%,#31206e 50%,#080b15 72%);box-shadow:0 0 70px #8b5cf688;animation:pulse 3s infinite}.orb:after{content:"AI";position:absolute;font-size:36px;font-weight:1000;color:white}.ai-form{display:grid;gap:10px}.ai-form textarea{width:100%;min-height:120px;background:#070b14;color:white;border:1px solid var(--border);border-radius:11px;padding:12px;resize:vertical}.answer{min-height:85px;background:#070b14;border:1px solid var(--border);border-radius:11px;padding:12px;color:#aeb8ce;font-size:12px;line-height:1.6;white-space:pre-wrap}@keyframes pulse{50%{transform:scale(1.05);box-shadow:0 0 100px #8b5cf699}}.table{width:100%;border-collapse:collapse}.table td,.table th{padding:11px;text-align:left;border-bottom:1px solid var(--border);font-size:12px}.muted{color:var(--muted)}.form{display:grid;gap:9px;margin-bottom:16px}.form input,.form textarea,.form select{width:100%;background:#070b14;color:white;border:1px solid var(--border);border-radius:10px;padding:11px}.btn{background:#111827;border:1px solid var(--border);color:white;padding:10px 12px;border-radius:9px}.btn.primary{background:linear-gradient(135deg,#8b5cf6,#06b6d4);border:0}.itemgrid{grid-template-columns:repeat(3,1fr)}.empty{text-align:center;padding:40px;color:var(--muted);border:1px dashed var(--border);border-radius:15px}.footer{text-align:center;color:#536079;font-size:10px;padding:30px}
+@media(max-width:1050px){.stats,.quick,.coursegrid,.contentgrid,.itemgrid{grid-template-columns:repeat(2,1fr)}.progress,.ai{grid-template-columns:1fr}}@media(max-width:700px){.sidebar{height:64px;width:100%;bottom:auto;padding:9px;display:flex;align-items:center}.logo{margin:0 7px}.sublogo,.side{display:none}.nav{display:flex;overflow:auto}.nav button{white-space:nowrap;padding:9px}.main{margin:0;width:100%;padding:88px 13px 20px}.top h1{font-size:28px}.stats,.quick,.coursegrid,.contentgrid,.itemgrid{grid-template-columns:1fr}.hero h2{font-size:29px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+<div class="logo">&lt;/&gt; <span>KAJU</span> DEVS</div><div class="sublogo">LEARN • PRACTICE • BUILD</div>
+<nav class="nav">
+<button class="active" data-page="dashboard">📊 Dashboard</button>
+<button data-page="learn">📚 Learn</button><button data-page="practice">🎯 Practice</button>
+<button data-page="notes">📝 Notes</button><button data-page="shortcuts">⚡ Shortcuts</button>
+<button data-page="roadmap">🗺️ Roadmaps</button><button data-page="ai">🤖 AI Lab</button><button data-page="profile">👤 Profile</button>
+</nav><div class="side"><b>KAJU DEVS</b><br>Build your skills one problem, one project and one day at a time.</div>
+</aside>
+<main class="main">
+<header class="top"><div><div class="eyebrow">CODING LEARNING PLATFORM</div><h1 id="title">Kaju Devs</h1><p id="subtitle">Learn smarter. Practice consistently. Build confidently.</p></div><button id="loginBtn">🔐 Login / Sign Up</button></header>
+
+<section id="dashboard" class="page active">
+<div class="card hero"><div class="eyebrow">WELCOME TO YOUR DEVELOPER JOURNEY</div><h2>Turn coding practice into measurable progress.</h2><p>Kaju Devs brings short notes, practice questions, roadmaps, shortcuts, projects and AI-assisted learning into one focused workspace.</p><div class="chips"><span class="chip">📚 Courses</span><span class="chip">🎯 Practice</span><span class="chip">📈 Progress</span><span class="chip">🤖 AI Learning</span></div><div class="hero-actions"><button class="btn primary" data-go="learn">Start Learning →</button><button class="btn" data-go="ai">Ask AI</button></div></div>
+<div class="grid stats section">
+<div class="card stat"><small>Overall Progress</small><strong class="purple" id="overall">0%</strong></div><div class="card stat"><small>Problems Solved</small><strong class="green" id="solved">0</strong></div><div class="card stat"><small>Notes Saved</small><strong class="cyan" id="notesCount">0</strong></div><div class="card stat"><small>Day Streak</small><strong class="yellow" id="streak">1 🔥</strong></div>
+</div>
+<div class="grid progress">
+<div class="card ringbox"><div class="ring" id="ring"><div><b id="ringText">0%</b><small>developer progress</small></div></div></div>
+<div class="card"><h2>Skill Card</h2><div class="rows">
+<div class="row"><div class="rowhead"><b>HTML & CSS</b><span>70%</span></div><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+<div class="row"><div class="rowhead"><b>JavaScript</b><span>55%</span></div><div class="bar"><div class="fill" style="width:55%"></div></div></div>
+<div class="row"><div class="rowhead"><b>DSA</b><span>40%</span></div><div class="bar"><div class="fill" style="width:40%"></div></div></div>
+<div class="row"><div class="rowhead"><b>Git & GitHub</b><span>65%</span></div><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+</div></div></div>
+<div class="section"><h2>Quick Access</h2><div class="grid quick">
+<button data-go="learn">📚<b>Learn</b><span>Short, focused coding lessons.</span></button><button data-go="practice">🎯<b>Practice</b><span>Questions by difficulty.</span></button><button data-go="notes">📝<b>My Notes</b><span>Save your revision material.</span></button><button data-go="roadmap">🚀<b>Roadmaps</b><span>Know what to learn next.</span></button>
+</div></div>
+</section>
+
+<section id="learn" class="page"><div class="section"><h2>Learning Tracks</h2><p class="muted">Pick a skill and progress from fundamentals to projects.</p></div><div class="grid coursegrid">
+<div class="card course"><span class="badge">BEGINNER</span><div class="icon">🌐</div><h3>HTML & CSS</h3><p>Semantic HTML, CSS, Flexbox, Grid, responsive layouts and projects.</p><button class="btn primary" onclick="toast('HTML & CSS track selected')">Continue</button></div>
+<div class="card course"><span class="badge">CORE</span><div class="icon">⚡</div><h3>JavaScript</h3><p>JS fundamentals, DOM, APIs, async programming and practical projects.</p><button class="btn primary" onclick="toast('JavaScript track selected')">Continue</button></div>
+<div class="card course"><span class="badge">PLACEMENT</span><div class="icon">🧠</div><h3>DSA</h3><p>Arrays, strings, linked lists, stacks, queues, trees and patterns.</p><button class="btn primary" onclick="toast('DSA track selected')">Continue</button></div>
+<div class="card course"><span class="badge">BACKEND</span><div class="icon">☕</div><h3>Java</h3><p>OOP, collections, exceptions, JDBC and backend fundamentals.</p><button class="btn primary" onclick="toast('Java track selected')">Continue</button></div>
+<div class="card course"><span class="badge">DATABASE</span><div class="icon">🗄️</div><h3>SQL</h3><p>Queries, joins, grouping, subqueries, indexes and database basics.</p><button class="btn primary" onclick="toast('SQL track selected')">Continue</button></div>
+<div class="card course"><span class="badge">CAREER</span><div class="icon">🚀</div><h3>Projects</h3><p>Build portfolio-ready apps and learn how to present your work.</p><button class="btn primary" onclick="toast('Projects track selected')">Explore</button></div>
+</div></section>
+
+<section id="practice" class="page"><div class="section"><h2>Practice Arena</h2><p class="muted">Solve, mark progress and keep your streak moving.</p></div><div class="grid itemgrid" id="questions"></div></section>
+
+<section id="notes" class="page"><div class="section"><h2>Short Notes</h2><p class="muted">Your quick revision vault.</p></div><div class="card form"><input id="nt" placeholder="Note title"><textarea id="nb" placeholder="Write your note..."></textarea><button class="btn primary" id="addNote">Save Note</button></div><div class="grid itemgrid" id="notes"></div></section>
+
+<section id="shortcuts" class="page"><div class="section"><h2>Helpful Shortcuts</h2></div><div class="grid itemgrid">
+<div class="card content"><span class="badge">VS CODE</span><h3>Essential</h3><p>Ctrl + P — Quick Open<br>Ctrl + Shift + P — Command Palette<br>Alt + ↑ / ↓ — Move line<br>Ctrl + / — Comment</p></div>
+<div class="card content"><span class="badge">GIT</span><h3>Daily Flow</h3><p>git status<br>git add .<br>git commit -m "message"<br>git push</p></div>
+<div class="card content"><span class="badge">TERMINAL</span><h3>Linux Basics</h3><p>pwd — current folder<br>ls — list files<br>cd — change folder<br>clear — clear terminal</p></div>
+</div></section>
+
+<section id="roadmap" class="page"><div class="section"><h2>Developer Roadmaps</h2><p class="muted">Follow a path instead of learning randomly.</p></div><div class="grid itemgrid">
+<div class="card content"><span class="badge">FRONTEND</span><h3>Frontend Developer</h3><p>HTML → CSS → JavaScript → Git → React → APIs → Projects → Portfolio</p></div>
+<div class="card content"><span class="badge">FULL STACK</span><h3>Full Stack</h3><p>Frontend → Backend → Database → Authentication → APIs → Deployment → Projects</p></div>
+<div class="card content"><span class="badge">PLACEMENT</span><h3>Placement Prep</h3><p>Language → DSA → DBMS → OS → CN → OOP → Projects → Resume → Interviews</p></div>
+</div></section>
+
+<section id="ai" class="page"><div class="section"><h2>🤖 Kaju AI Learning Lab</h2><p class="muted">Ask for explanations, hints, revision plans or practice questions.</p></div><div class="ai">
+<div class="card ai-art"><div class="orb"></div></div><div class="card"><div class="ai-form"><textarea id="aiInput" placeholder="Example: Explain recursion in simple words..."></textarea><button class="btn primary" id="aiBtn">Ask Kaju AI</button><div class="answer" id="aiAnswer">AI responses will appear here. Connect your AI API through a secure server-side endpoint before production use.</div></div></div>
+</div></section>
+
+<section id="profile" class="page"><div class="card"><h2>Your Developer Profile</h2><p class="muted">Account and progress settings.</p><table class="table"><tr><th>Field</th><th>Value</th></tr><tr><td>User ID</td><td id="uid">Guest</td></tr><tr><td>Level</td><td>Developer • Level 1</td></tr><tr><td>Goal</td><td>Build skills and projects</td></tr><tr><td>Storage</td><td>Local demo storage</td></tr></table><button class="btn primary" style="margin-top:15px" id="loginProfile">Create / Login Account</button></div></section>
+
+<div class="footer">KAJU DEVS • Learn • Practice • Build • Grow</div>
+</main></div>
+<script>
+const stateKey="kaju_devs_v2";
+let state=JSON.parse(localStorage.getItem(stateKey)||'null')||{notes:[],solved:0};
+const titles={dashboard:["Kaju Devs","Learn smarter. Practice consistently. Build confidently."],learn:["Learning Tracks","Choose a skill and build it step by step."],practice:["Practice Arena","Turn practice into measurable progress."],notes:["Short Notes","Your personal revision vault."],shortcuts:["Helpful Shortcuts","Fast references for everyday development."],roadmap:["Developer Roadmaps","Follow a focused path instead of learning randomly."],ai:["Kaju AI Learning Lab","AI-assisted explanations, hints and practice."],profile:["Developer Profile","Your account, identity and learning progress."]};
+function $(id){return document.getElementById(id)}
+function toast(t){alert(t)}
+document.querySelectorAll(".nav button,[data-go]").forEach(b=>b.addEventListener("click",()=>show(b.dataset.page||b.dataset.go)));
+function show(id){document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));$(id).classList.add("active");$("title").textContent=titles[id][0];$("subtitle").textContent=titles[id][1];window.scrollTo(0,0)}
+function save(){localStorage.setItem(stateKey,JSON.stringify(state));render()}
+function render(){ $("notesCount").textContent=state.notes.length;$("solved").textContent=state.solved;let p=Math.min(100,state.solved*10+state.notes.length*5);$("overall").textContent=p+"%";$("ringText").textContent=p+"%";$("ring").style.background=`conic-gradient(var(--purple) ${p}%,#1b2334 0)`;$("uid").textContent=localStorage.getItem("kaju_uid")||"Guest";renderNotes();renderQuestions()}
+function renderNotes(){$("notes").innerHTML=state.notes.length?state.notes.map((n,i)=>`<div class="card content"><span class="badge">MY NOTE</span><h3>${esc(n.t)}</h3><p>${esc(n.b)}</p><button class="btn" onclick="delNote(${i})">Delete</button></div>`).join(""):'<div class="empty">No personal notes yet. Add your first note above.</div>'}
+function renderQuestions(){const q=[["Two Sum","Easy"],["Reverse Linked List","Easy"],["Maximum Subarray","Medium"],["Valid Parentheses","Easy"],["Binary Search","Easy"],["Merge Two Sorted Arrays","Easy"]];$("questions").innerHTML=q.map((x,i)=>`<div class="card content"><span class="badge">${x[1]}</span><h3>${x[0]}</h3><p>Practice this problem, write your approach, then compare with a solution.</p><button class="btn ${i<state.solved?'primary':''}" onclick="solve(${i})">${i<state.solved?'✓ Solved':'Mark Solved'}</button></div>`).join("")}
+function solve(i){if(i>=state.solved){state.solved++;save();toast("Progress updated!")}else toast("Already counted in your progress.")}
+function delNote(i){state.notes.splice(i,1);save()}
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+$("addNote").onclick=()=>{let t=$("nt").value.trim(),b=$("nb").value.trim();if(!t||!b)return toast("Add a title and note.");state.notes.unshift({t,b});$("nt").value="";$("nb").value="";save();toast("Note saved.")}
+$("aiBtn").onclick=()=>{let q=$("aiInput").value.trim();if(!q)return toast("Write your question first.");$("aiAnswer").textContent="Kaju AI request received. To make this a real AI assistant, connect a secure server-side AI endpoint. Never expose an API secret in this HTML.\\n\\nYour prompt:\\n"+q}
+$("loginBtn").onclick=$("loginProfile").onclick=()=>{let id=prompt("Choose your Kaju Devs User ID:");if(id){localStorage.setItem("kaju_uid",id);render();toast("Demo profile created. For real password accounts, connect Supabase Auth.")}}
+render();
+</script>
+</body>
+</html>
